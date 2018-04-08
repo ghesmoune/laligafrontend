@@ -1,0 +1,21 @@
+<div class="list-card-container">
+<div *ngFor="let league of leagues">
+<mat-card class="league-card">
+  <mat-card-header>
+    <div mat-card-avatar [ngStyle]="{'background-image': 'url('+league.image.imageUri +')'}" class="league-card-header-image"></div>
+    <mat-card-title >{{league.name}}</mat-card-title>
+    <mat-card-subtitle></mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{league.image.imageUri}}" alt="Logo of {{league.name}}">
+  <mat-card-content>
+    <p>
+    
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button  routerLink="/newLeague/{{league.id}}">Update</a>
+    <button mat-button (click)="delete(league)">Delete</button>
+  </mat-card-actions>
+</mat-card>
+</div>
+</div>

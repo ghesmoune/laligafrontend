@@ -1,0 +1,11 @@
+.league-card {
+    max-width: 200px;
+    margin: 20px
+  }
+  .league-card-header-image {
+    background-size: cover;
+  }
+  .list-card-container{
+    display: flex;
+    flex-wrap: wrap;
+  }

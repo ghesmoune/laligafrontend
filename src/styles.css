@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body{
+    padding: 0;
+    margin:0;
+}
+.spacer{
+    flex:1 1 auto;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction:column; 
+}
+.content{
+    display: flex; 
+    justify-content:flex-start;
+    flex:1; 
+}
+.main{
+   
+    text-align: center;
+    flex:4;
+}
+.navbar{
+    flex:1;
+}

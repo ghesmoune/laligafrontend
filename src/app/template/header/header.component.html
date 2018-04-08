@@ -1,0 +1,14 @@
+<div class="header">
+  <mat-toolbar color="primary" class="toolbar">
+      <mat-toolbar-row>
+    <p>{{selectedValue.name}}</p> <span class="spacer"></span> <button mat-button routerLink="/adminAcceuil">Acceuil</button>
+    <mat-form-field>
+        <mat-select placeholder="League" [(ngModel)]="selectedLeague" name="league" (change)=" setSelectedLeauge()">
+          <mat-option *ngFor="let league of leagues" [value]="league.id">
+            {{ league.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      </mat-toolbar-row>
+  </mat-toolbar>
+</div>

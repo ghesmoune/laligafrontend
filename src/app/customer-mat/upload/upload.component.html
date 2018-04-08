@@ -1,0 +1,14 @@
+<div class="full-width">
+    <div class="input-file-mat">
+    <div>Logo</div>
+    <div>
+    <input [hidden]="true" type="file" id="selectfile" (change)="selectFile($event)">
+    <label for="selectfile"><a mat-raised-button>File</a></label>
+    </div>
+    <div><button mat-raised-button type="button"  [disabled]="!selectedFiles"
+      (click)="upload()">Upload</button></div>
+    </div>
+    <div>
+    <mat-progress-bar mode="determinate" value="{{progress.percentage}}"></mat-progress-bar>
+   </div>
+</div>
